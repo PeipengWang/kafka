@@ -11,4 +11,4 @@ mq:
   kafka:
     producer:
       clusters: 43.143.251.77:9092
-      topic: my-topic
+      topic: mytopic
