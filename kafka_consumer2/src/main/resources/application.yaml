@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    bootstrap-servers: 43.143.251.77:9092
+    consumer:
+      group-id: my-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+#自定义的配置，不是springboot提供的自动配置
+mq:
+  kafka:
+    producer:
+      clusters: 43.143.251.77:9092
+      topic: mytopic
