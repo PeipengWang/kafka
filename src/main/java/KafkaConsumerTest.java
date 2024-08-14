@@ -30,7 +30,7 @@ public class KafkaConsumerTest {
    configMap.put("enable.auto.commit", "true");
    KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(configMap);
    //  消费者订阅指定主题的数据
-   consumer.subscribe(Collections.singletonList("quickstart-events"));
+   consumer.subscribe(Collections.singletonList("mytopic"));
    while (true) {
      // 每隔100毫秒，抓取一次数据
      ConsumerRecords<String, String> records =
@@ -40,7 +40,6 @@ public class KafkaConsumerTest {
        System.out.println("K = " + record.key() + ", V = " + record.value());
      }
    }
-
   }
 
 }
