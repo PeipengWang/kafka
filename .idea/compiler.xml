@@ -8,11 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="kafak_producer" />
+        <module name="kafka-camel" />
         <module name="kafka_consumer1" />
         <module name="kafka" />
+        <module name="kafka_consumer2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="kafka_consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
