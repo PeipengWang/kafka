@@ -10,7 +10,7 @@ public class KafkaProducerTest {
         // 配置属性集合
         Map<String, Object> configMap = new HashMap<>();
         //  配置属性：Kafka服务器集群地址
-        configMap.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "43.143.251.77:9092");
+        configMap.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "152.136.246.11:9092");
         //  配置属性：Kafka生产的数据为KV对，所以在生产数据进行传输前需要分别对K,V进行对应的序列化操作
         configMap.put(
                 ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,

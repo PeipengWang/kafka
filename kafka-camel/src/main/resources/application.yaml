@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    bootstrap-servers: 43.143.251.77:9092
+    consumer:
+      group-id: camel-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+camel:
+  component:
+    kafka:
+      brokers: 43.143.251.77:9092
+      client-id: kafka-client
+

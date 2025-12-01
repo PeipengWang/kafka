@@ -14,7 +14,7 @@ public class KafkaConsumerTest {
     // 配置属性集合
     Map<String, Object> configMap = new HashMap<String, Object>();
    //  配置属性：Kafka集群地址
-   configMap.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "43.143.251.77:9092");
+   configMap.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "152.136.246.11:9092");
    // 配置属性: Kafka传输的数据为KV对，所以需要对获取的数据分别进行反序列化
    configMap.put(
        ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,

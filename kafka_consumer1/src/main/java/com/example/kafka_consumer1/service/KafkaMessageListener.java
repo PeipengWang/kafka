@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaMessageListener {
 
-    @KafkaListener(topics = "mytopic",groupId = "my-group")
+    @KafkaListener(topics = "mytopic",groupId = "group1")
     public void applyStatusSync(String records) {
         System.out.println(records);
         // 反序列化 JSON 字符串为 EpduResultsWrapper 对象
